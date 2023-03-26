@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let numbers = [];
+        // numbers[0]=prompt('nhập n1');
+        // numbers[1]=prompt('nhập n2');
+        // numbers[2]=prompt('nhập n3');
+        // numbers[3]=prompt('nhập n4');
+        // numbers[4]=prompt('nhập n5');
+        // document.write(numbers)
+        let min = +prompt('nhập min');
+        let max;// = //+prompt('nhập max') 
+        // while(min > max){
+        //     alert('max không hợp lệ')
+        //     max=+prompt('nhập lại max lớn hơn min')
+        // } 
+        do {
+            max=+prompt('nhập max');
+        } while (min > max);
+        let size = +prompt('nhập số lượng phần tử ');
+        let numbers = new Array(size);
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = Math.floor(Math.random() * ((max-min+1)+min));
+        }
+        document.write(numbers);
+
+    </script>
+</body>
+
+</html>

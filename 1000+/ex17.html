@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        nhập số x<input type="number" id="num1">
+    </p>
+    <p>
+        nhập số n<input type="number" id="num2">
+    </p>
+    
+    <button onclick=square()> result</button>
+    <p id="result">kết quả là</p>
+    </body>
+    <script>
+    function square() {
+        let numx=+document.getElementById('num1').value
+        let numn=+document.getElementById('num2').value
+        let total=1
+        let sum=0
+        for(let i = 1 ; i <= numn ; i++){
+           total =total*i;
+           sum += Math.pow( numx , i )/(total);
+    
+            
+        }
+    document.getElementById('result').innerHTML = sum ; 
+    }
+    </script>
+
+</body>
+</html>

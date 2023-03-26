@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr= prompt('nhập mảng')
+        let numbers='0123456789'
+        let count =0
+        document.write('mảng bạn vừa nhập là :'+arr+'<br>')
+
+        for(let i of arr){
+            if(numbers.indexOf(i)!=-1){
+                count+=1
+            }
+        }
+        document.write('mảng có '+count+  ' số kí tự số')
+    </script>
+</body>
+</html>

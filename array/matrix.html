@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+       let matrix = new Array(5)
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i] = new Array(7);
+        for (let j = 0; j < matrix[i].length; j++) {
+            matrix[i][j] = Math.floor(Math.random() * 41) + 10
+        }
+        
+    }
+        // let data =''
+        // for(let x=0 ; x<matrix.length;x++){  
+        //     data +='<br>'
+        //     for( let y=0 ;y<matrix[x].length;y++){
+        //         data=data + matrix[x][y]+`&ensp;`
+                
+        //     }
+        // }
+        // document.write(data)
+       
+// var matrix = new Array(10).fill(new Array(10));
+// for (var row = 0; row < matrix.length; row++) {
+//  for (var column = 0; column < matrix[row].length; column++) {
+//  console.log(matrix[row][column]) //= Math.floor((Math.random() * 100) + 1);
+//  }
+// }
+ console.log(matrix)
+
+    </script>
+</body>
+
+</html>

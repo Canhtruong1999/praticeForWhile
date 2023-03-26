@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-        let n1 = 1
-        let n2 = 1
-        let sum = 0
-
-
-        for (let i = 1; i < 1000; i++) {
-            sum = n1 + n2
-            n1 = n2
-            n2 = sum
-            if (sum % 7 == 0) {
-                document.write('số đầu tiên chia hết cho 7 là ' + sum)
-                break
+        let value=+prompt('nhập chuỗi')
+        
+        let count=0
+        for( let x of str){
+            if(value[x]<0){
+                count+=1
             }
         }
-
-
+        document.write('chuỗi có '+count+' số nguyên âm')
     </script>
 </body>
-
 </html>

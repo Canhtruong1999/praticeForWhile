@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=prompt('nhập chuỗi')
+        let UPPER='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        let lower='abcdefghijklmnopqrstuvwxyz'
+        let x=[]
+        for(let i=0;i<str.length;i++){
+            if(UPPER.indexOf(str[i])!=-1){
+                x.push(str[i].toLowerCase())
+            }else if( lower.indexOf(str[i])!=1){
+                x.push(str[i].toUpperCase())
+            }else{
+                x.push(str[i])
+            }
+        }
+        document.write(x)
+    </script>
+</body>
+</html>

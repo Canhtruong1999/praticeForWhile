@@ -10,15 +10,10 @@
 
 <body>
     <script>
-        let n1 = 1
-        let n2 = 1
-        let sum = 0
-        let total = 2
-        for (let i = 1; i <= 20 - 2; i++) {
-            sum = n1 + n2
-            n1 = n2
-            n2 = sum
-            total = total + sum
+        let num = +prompt('nhập số')
+        total = 0
+        for (let i = 1; i <= num; i++) {
+            total += i
         }
         document.write(total)
     </script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>mảng là : x=[1,2,3,4,5,3,3]</p>
+    <script>
+        let value =prompt('nhập giá trị cần tìm')
+        let x=[1,2,3,4,5,3,3]
+        let index=-1
+        let count =0
+        for( let i=0 ;i<x.length;i++){
+            if(value==x[i]){
+                index=i
+                count+=1
+            }
+        }
+            if(index!=-1){
+                alert('mảng chứa value ,có '+count +'phần tử')
+
+            }else{
+                alert('mảng ko chứa value')
+            }
+        
+    </script>
+</body>
+</html>

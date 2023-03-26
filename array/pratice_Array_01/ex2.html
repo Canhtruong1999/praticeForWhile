@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr= new Array(10)
+        let indexofmax=0
+        for(let i=0 ;i<arr.length;i++){
+            arr[i]=Math.floor(Math.random()*21)
+        }
+        let max=arr[0]
+        document.write('mảng là :'+arr+'<br>')
+        for(let i=1;i<arr.length;i++){
+            if(max<arr[i]){
+                max=arr[i]
+                indexofmax=i
+            }
+        }
+    document.write('phần tử lớn nhất là : '+max+' với index là '+indexofmax)    
+    </script>
+</body>
+</html>
